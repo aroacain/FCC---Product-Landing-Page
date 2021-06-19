@@ -3,15 +3,6 @@
   padding: 0;
 }
 
-@media (max-width: 600px) {
-  .package-descriptions {
-    flex-direction: column;
-  }
-  .package-descriptions ul {
-    text-align: center;
-    align-self: center;
-  }
-}
 
 header {
   position: fixed;
@@ -31,25 +22,25 @@ a {
 #logo {
   display: flex;
   align-items: center;
-  padding: 1rem;
+  padding: 1vw;
 }
 
 #header-img {
-  max-height: 5vw;
+  max-height: 75px;
 }
 
 #header-txt {
   font-family: 'Berkshire Swash', cursive;
   color: #3B2E29;
   padding: 1rem;
-  font-size: 2vw;
+  font-size: 2rem;
 }
 
 #nav-elements {
   display: flex;
   justify-content: flex-end;
   font-family: 'lato', sans-serif;
-  font-size: 1.5vw;
+  font-size: 1rem;
   color: #3b2e29;
   list-style-type: none;
 }
@@ -175,4 +166,31 @@ form {
   border-radius: 10px;
   border-width: thin;
   background-color: #f7f2ec;
+}
+
+@media (max-width: 600px) {
+  .package-descriptions {
+    flex-direction: column;
+  }
+  .package-descriptions li {
+    text-align: center;
+    align-self: center;
+    font-size: 1rem;
+  }
+  #nav-elements {
+    font-size: 1rem;
+  }
+  #header-txt {
+    font-size: 1.5rem;
+  }
+  h2 {
+    font-size:2rem;
+  }
+  p, #email {
+    font-size: 1rem;
+  }
+  #submit {
+    font-size: 1rem;
+    margin: auto;
+  }
 }
